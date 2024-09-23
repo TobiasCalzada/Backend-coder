@@ -13,6 +13,12 @@ class ProductsManager {
       category: "pantalon",
       title: "lana",
       price: "9000",
+    },
+    {
+      id: crypto.randomBytes(12).toString("hex"),
+      category: "zapatillas",
+      title: "cuero",
+      price: "2000",
     }
   ];
   //create metodo
@@ -75,7 +81,6 @@ async function test() {
     console.log(error.message);
   }
 }
-
 //test();
 
 const productsManager = new ProductsManager();

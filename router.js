@@ -5,12 +5,12 @@ async function router(requerimientos, respuesta) {
   const options = { "content-Type": "text/plain" };
 
   switch (url) {
-    case ("/"):
+    case "/":
       respuesta
       .writeHead(200, options)
       .end("Coder api conected");
       break;
-    case ("/api/products"):
+    case "/api/products":
       try {
         const products = await productsManager.readAll()
         return respuesta

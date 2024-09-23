@@ -1,0 +1,55 @@
+[
+  {
+    "title": ":Remera",
+    "price": ":2000",
+    "stock": ":10",
+    "category": "ropa",
+    "id": "820eae0fc5d9b7b7da56c3d3"
+  },
+  {
+    "title": ":Pantalon",
+    "price": ":1000",
+    "stock": ":8",
+    "category": "none",
+    "id": "56f3c95bedef53820770ff1c"
+  },
+  {
+    "title": "zapatilla",
+    "price": "40000",
+    "stock": "20",
+    "category": "none",
+    "id": "95eefeef439fa26587bd119a"
+  },
+  {
+    "title": "boxer",
+    "price": "6000",
+    "stock": "40",
+    "category": "none",
+    "id": "f2b5d12e40ba066c032b9aa7"
+  },
+  {
+    "title": "reloj",
+    "price": "30000",
+    "stock": "20",
+    "category": "none",
+    "id": "2d0da31608f9003db055e199"
+  },
+  {
+    "title": "productos desde postman",
+    "price": 1000,
+    "stock": 10,
+    "id": "741812bd76acff0597fb567d"
+  },
+  {
+    "title": "producto update desde postman",
+    "price": 9000,
+    "stock": 80,
+    "id": "3844b22e0291c77ce94ce99a"
+  },
+  {
+    "title": "productos desde postman 8",
+    "price": 8000,
+    "stock": 780,
+    "id": "52373c437fac89475f3ff2bc"
+  }
+]
