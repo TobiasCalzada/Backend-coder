@@ -1,4 +1,4 @@
-import router from "./router.js";
+import router from "../router.js";
 import {createServer} from "http";
 
 //1. crear un servidor con el llamado al modulo htttp y agregando el metodo creatserver
