@@ -1,35 +1,322 @@
 [
   {
-    "title": "productos desde postman 200",
-    "category": "to",
-    "price": 1,
-    "stock": 1,
+    "title": "product 1",
+    "category": "madera",
+    "stock": 2,
+    "price": 30,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
-    "id": "5d1d52d531879e7d6ff21578"
+    "id": "dc2b99c6aced75aca11f1481"
   },
   {
-    "title": "productos desde postman 200",
-    "category": "hola",
-    "price": 1,
-    "stock": 1,
+    "title": "product 2",
+    "category": "madera",
+    "stock": 29,
+    "price": 3990,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
-    "id": "5d1d52d531879e7d6ff21578"
+    "id": "04adde66a84f54aed56effd2"
   },
   {
-    "title": "productos desde postman 200",
-    "category": "to",
-    "price": 1,
-    "stock": 1,
+    "title": "product 3",
+    "category": "madera",
+    "stock": 59,
+    "price": 390,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
-    "id": "5d1d52d531879e7d6ff21578"
+    "id": "7615fef8fcac6ce6eb5172a2"
   },
   {
-    "title": "productos desde postman 200",
-    "category": "hola",
-    "sotck": 2,
-    "price": 1,
-    "stock": 1,
+    "title": "product 4",
+    "category": "madera",
+    "price": 2000,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
-    "id": "d660a6ce7cc18056b6c34b07"
+    "stock": 1,
+    "id": "d455eb617af8f57782d507c1"
+  },
+  {
+    "title": "product 5",
+    "category": "madera",
+    "stock": 3000,
+    "price": 2000,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "e3c0879a2cb65d9777408236"
+  },
+  {
+    "title": "product 6",
+    "category": "madera",
+    "stock": 30090,
+    "price": 1000,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "272c19ae8da6da839e4785cb"
+  },
+  {
+    "title": "product 7",
+    "category": "madera",
+    "stock": 20,
+    "price": 1000,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "5b4254f1653d9887537d34dc"
+  },
+  {
+    "title": "product 8",
+    "category": "madera",
+    "stock": 260,
+    "price": 100,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "c93f1cd5c13d99db2ad203bc"
+  },
+  {
+    "title": "product 9",
+    "category": "madera",
+    "stock": 2000,
+    "price": 1400,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "ba18eec153f9f16176f71f15"
+  },
+  {
+    "title": "product 10",
+    "category": "madera",
+    "stock": 2000,
+    "price": 1400,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "8a08d799e7262bc839cb9880"
+  },
+  {
+    "title": "product 11",
+    "category": "plastico",
+    "stock": 4000,
+    "price": 1400,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "3c693a601fb357660bab114a"
+  },
+  {
+    "title": "product 12",
+    "category": "plastico",
+    "stock": 9000,
+    "price": 19900,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "40512927c77a754ecfa4041b"
+  },
+  {
+    "title": "product 13",
+    "category": "plastico",
+    "stock": 90,
+    "price": 100,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "45a8a852294e1e12a6886bec"
+  },
+  {
+    "title": "product 14",
+    "category": "plastico",
+    "stock": 70,
+    "price": 1300,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "8519a98b774fb8f11ccabf9e"
+  },
+  {
+    "title": "product 15",
+    "category": "plastico",
+    "stock": 700,
+    "price": 1300,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "bfa2d4436fbd404b65047f16"
+  },
+  {
+    "title": "product 16",
+    "category": "plastico",
+    "stock": 7990,
+    "price": 1300,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "e2e2f6877145fee8fbcc8955"
+  },
+  {
+    "title": "product 17",
+    "category": "plastico",
+    "stock": 7990,
+    "price": 600,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "c6e7323c8d2a2713309453cf"
+  },
+  {
+    "title": "product 18",
+    "category": "plastico",
+    "stock": 70,
+    "price": 600,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "68d47eaedf11a188faa2b678"
+  },
+  {
+    "title": "product 19",
+    "category": "plastico",
+    "stock": 70,
+    "price": 700,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "973878d74ddd99866a770bac"
+  },
+  {
+    "title": "product 20",
+    "category": "plastico",
+    "stock": 70,
+    "price": 900,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "6b1142e3d8db388bad0c7d8d"
+  },
+  {
+    "title": "product 21",
+    "category": "hierro",
+    "stock": 700,
+    "price": 900,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "a62cb0eabc3470f006d84349"
+  },
+  {
+    "title": "product 22",
+    "category": "hierro",
+    "stock": 300,
+    "price": 900,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "a40c270bd8b39e819e57a997"
+  },
+  {
+    "title": "product 23",
+    "category": "hierro",
+    "stock": 77,
+    "price": 900,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "9264630b3d5987b0f765ee76"
+  },
+  {
+    "title": "product 24",
+    "category": "hierro",
+    "stock": 787,
+    "price": 900,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "3ed97f800ad5c2bcd6bd7261"
+  },
+  {
+    "title": "product 25",
+    "category": "hierro",
+    "stock": 787,
+    "price": 900,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "c338b361d7e1475a6df9ef15"
+  },
+  {
+    "title": "product 26",
+    "category": "hierro",
+    "stock": 787,
+    "price": 9800,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "2954ef608b7215022cb03fd2"
+  },
+  {
+    "title": "product 27",
+    "category": "hierro",
+    "stock": 22,
+    "price": 9800,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "14afc3f963e8a52be8e9a35d"
+  },
+  {
+    "title": "product 28",
+    "category": "hierro",
+    "stock": 28,
+    "price": 9800,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "513d7a9cb28fc2c3f296d56e"
+  },
+  {
+    "title": "product 29",
+    "category": "hierro",
+    "stock": 28,
+    "price": 90,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "68b1e77ec22abf385d0c7b45"
+  },
+  {
+    "title": "product 30",
+    "category": "hierro",
+    "stock": 28,
+    "price": 90,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "61c1349e124afb0055bb87de"
+  },
+  {
+    "title": "product 31",
+    "category": "cemento",
+    "stock": 280,
+    "price": 90,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "a9b6b8f3eea9bfa947b83222"
+  },
+  {
+    "title": "product 32",
+    "category": "cemento",
+    "stock": 260,
+    "price": 30,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "d9c286e981fde627cbbb9f6d"
+  },
+  {
+    "title": "product 33",
+    "category": "cemento",
+    "stock": 260,
+    "price": 30,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "f76017b384a76c0d62a3f484"
+  },
+  {
+    "title": "product 34",
+    "category": "cemento",
+    "stock": 230,
+    "price": 30,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "212e9612b84938e6aed04651"
+  },
+  {
+    "title": "product 35",
+    "category": "cemento",
+    "stock": 230,
+    "price": 80,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "885330a486c0e36af2893cb4"
+  },
+  {
+    "title": "product 36",
+    "category": "cemento",
+    "stock": 230,
+    "price": 10,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "d87ee94cf8102b198c1626fc"
+  },
+  {
+    "title": "product 37",
+    "category": "cemento",
+    "stock": 230,
+    "price": 990,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "05204aa408613935c0b0649f"
+  },
+  {
+    "title": "product 38",
+    "category": "cemento",
+    "stock": 230,
+    "price": 90,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "e5d0ca6a50ee778446124d82"
+  },
+  {
+    "title": "product 39",
+    "category": "cemento",
+    "stock": 230,
+    "price": 90,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "8a9df5e0f7edfe3a92fd96d9"
+  },
+  {
+    "title": "product 40",
+    "category": "cemento",
+    "stock": 200,
+    "price": 90,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
+    "id": "8a6593952c9e71b885328262"
   }
 ]
