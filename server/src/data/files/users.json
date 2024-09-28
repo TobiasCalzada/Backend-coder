@@ -1,0 +1,39 @@
+[
+  {
+    "email": "pepe@gmail.com",
+    "password": "3968",
+    "role": 3,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
+    "id": "b375e1cdc44aff4a979c5bbc"
+  },
+  {
+    "email": "pepe@gmail.com",
+    "password": "3968",
+    "rol": 3,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
+    "role": 0,
+    "id": "f97d6599b3e1be826881dd23"
+  },
+  {
+    "email": "pepe@gmail.com",
+    "password": "3968",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
+    "role": 0,
+    "id": "610985670b49cc2347f37875"
+  },
+  {
+    "email": "pepe@gmail.com",
+    "password": "3968",
+    "rol": 3,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
+    "role": 0,
+    "id": "570e5785a86b3a6f7d14c63c"
+  },
+  {
+    "email": "pepe@gmail.com",
+    "password": "3968",
+    "role": 3,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
+    "id": "74696348c7c82ca76231eac2"
+  }
+]

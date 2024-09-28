@@ -6,9 +6,9 @@ async function getAllProducts(req, res, next) {
     let responseOfProducts;
 
     if (!category) {
-      responseOfProducts = await productsManager.readFileProducts();
+      responseOfProducts = await productsManager.readAllProducts();
     } else {
-      responseOfProducts = await productsManager.readFileProducts(category);
+      responseOfProducts = await productsManager.readAllProducts(category);
     }
 
     if (responseOfProducts.length > 0) {
@@ -27,13 +27,15 @@ async function getAllProducts(req, res, next) {
 
 async function create(req, res, next) {
   try {
-    const { title, price, stock } = req.params;
+    const { title, photo, price, stock } = req.params;
     let { category } = req.query;
     if (!category) {
-      category = "none";
+      category = "the category was not assigned";
     }
+    
     const response = await productsManager.creatOneProduct({
       title,
+      photo,
       price,
       stock,
       category,
@@ -47,7 +49,7 @@ async function create(req, res, next) {
 async function getProduct(req, res, next) {
   try {
     const { pid } = req.params;
-    const responseId = await productsManager.read(pid);
+    const responseId = await productsManager.readOneProduct(pid);
     if (responseId) {
       return res.status(200).json({ message: "product id: ", responseId });
     } else {

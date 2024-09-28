@@ -1,7 +1,7 @@
 import fs from "fs";
 import crypto from "crypto";
 
-class ProductsManager {
+class UserManager {
   constructor(path) {
     this.path = path;
     this.exists();
@@ -17,14 +17,14 @@ class ProductsManager {
     }
   }
 
-  async readAllProducts(category) {
+  async readAllUsers(role) {
     try {
       const dataOfRead = await fs.promises.readFile(this.path, "utf-8");
       const parseDataOfRead = JSON.parse(dataOfRead);
       //sconsole.log(parseDataOfRead);
-      if (category) {
+      if (role) {
         const filterData = parseDataOfRead.filter(
-          (each) => each.category === category
+          (each) => each.role === role
         );
         return filterData;
       } else {
@@ -35,9 +35,9 @@ class ProductsManager {
     }
   }
 
-  async readOneProduct(id) {
+  async readOneUser(id) {
     try {
-      const all = await this.readAllProducts();
+      const all = await this.readAllUsers();
       const one = all.find((each) => each.id === id);
       return one;
     } catch (error) {
@@ -46,13 +46,13 @@ class ProductsManager {
     }
   }
 
-  async creatOneProduct(data) {
+  async creatOneUser(data) {
     try {
       data.id = crypto.randomBytes(12).toString("hex");
-      const allOneProduct = await this.readAllProducts();
-      allOneProduct.push(data);
-      const stringOneProduct = JSON.stringify(allOneProduct, null, 2);
-      await fs.promises.writeFile(this.path, stringOneProduct);
+      const allOneUser = await this.readAllUsers();
+      allOneUser.push(data);
+      const stringOneUser = JSON.stringify(allOneUser, null, 2);
+      await fs.promises.writeFile(this.path, stringOneUser);
       return data.id;
     } catch (error) {
       console.log(error);
@@ -61,8 +61,8 @@ class ProductsManager {
 
   async update(id, newData) {
     try {
-      const all = await this.readAllProducts();
-      const index = all.findIndex((product) => product.id === id);
+      const all = await this.readAllUsers();
+      const index = all.findIndex((user) => user.id === id);
       if (index === -1) {
         return null;
       }
@@ -75,17 +75,17 @@ class ProductsManager {
       throw error;
     }
   }
-  
+
   async delete(id) {
     try {
-      const all = await this.readAllProducts();
-      const filteredProducts = all.filter((product) => product.id !== id);
-      if (all.length === filteredProducts.length) {
-        return null
+      const all = await this.readAllUsers();
+      const filteredUsers = all.filter((user) => user.id !== id);
+      if (all.length === filteredUsers.length) {
+        return null;
       }
-      const stringAll = JSON.stringify(filteredProducts, null, 2);
+      const stringAll = JSON.stringify(filteredUsers, null, 2);
       await fs.promises.writeFile(this.path, stringAll);
-      return `Product with id ${id} deleted`;
+      return `User with id ${id} deleted`;
     } catch (error) {
       console.log(error);
       throw error;
@@ -93,7 +93,6 @@ class ProductsManager {
   }
 }
 
+const usersManager = new UserManager("./src/data/files/users.json");
 
-const productsManager = new ProductsManager("./src/data/files/products.json");
-
-export default productsManager;
+export default usersManager;
