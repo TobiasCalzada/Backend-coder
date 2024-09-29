@@ -42,6 +42,10 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 ![34](https://github.com/user-attachments/assets/9010b914-ebfa-4cf0-b5e3-222bde35bd90)
 
 
+.Metodo filter(category) products 
+
+![77](https://github.com/user-attachments/assets/0275aad4-fbd5-4972-a97a-5c1d912037dd)
+
 
 
 
