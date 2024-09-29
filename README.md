@@ -26,5 +26,10 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 ![createuser1](https://github.com/user-attachments/assets/3d50e9cd-33ea-4d9a-8c49-99340afcf0a6)
 
 
+.Metodo UPDATE products y users:
+
+![UPDATEPRODUT](https://github.com/user-attachments/assets/c8d38807-0e88-498b-bc9d-87b865016900)
+
+
 
 
