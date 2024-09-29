@@ -17,3 +17,9 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 
 ![finduser](https://github.com/user-attachments/assets/f368b3da-82c6-41b5-9f00-223082978a90)
 
+
+.Metodo created products y users:
+
+![createdpro2](https://github.com/user-attachments/assets/82478345-4f0b-4fb9-816e-781173311b9f)
+
+
