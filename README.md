@@ -23,3 +23,8 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 ![createdpro2](https://github.com/user-attachments/assets/82478345-4f0b-4fb9-816e-781173311b9f)
 
 
+![createuser1](https://github.com/user-attachments/assets/3d50e9cd-33ea-4d9a-8c49-99340afcf0a6)
+
+
+
+
