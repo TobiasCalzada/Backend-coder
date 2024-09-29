@@ -5,3 +5,6 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 .Metodo readll products y users:
 
 ![addproducts](https://github.com/user-attachments/assets/0f521eaa-a012-4c85-bfca-b5c6bcd96201)
+
+
+![addUsers](https://github.com/user-attachments/assets/22c13ce9-0e80-4b12-bcf7-eceed6cec409)
