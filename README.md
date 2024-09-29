@@ -31,5 +31,6 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 ![UPDATEPRODUT](https://github.com/user-attachments/assets/c8d38807-0e88-498b-bc9d-87b865016900)
 
 
+![update2](https://github.com/user-attachments/assets/f1505d93-40f8-4de5-b613-106d10277000)
 
 
