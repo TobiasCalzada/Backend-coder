@@ -39,6 +39,7 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 ![33](https://github.com/user-attachments/assets/559d1543-12d5-49f0-820a-82bb0c76d767)
 
 
+![34](https://github.com/user-attachments/assets/9010b914-ebfa-4cf0-b5e3-222bde35bd90)
 
 
 
