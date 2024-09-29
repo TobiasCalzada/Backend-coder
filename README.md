@@ -13,3 +13,7 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 .Metodo findeone products y users:
 
 ![findproduct](https://github.com/user-attachments/assets/8adbca31-c41a-4e01-b6fe-517434460b33)
+
+
+![finduser](https://github.com/user-attachments/assets/f368b3da-82c6-41b5-9f00-223082978a90)
+
