@@ -8,3 +8,8 @@ A continuación en modo de gifs se comprobará cada funcionalidad.
 
 
 ![addUsers](https://github.com/user-attachments/assets/22c13ce9-0e80-4b12-bcf7-eceed6cec409)
+
+
+.Metodo findeone products y users:
+
+![findproduct](https://github.com/user-attachments/assets/8adbca31-c41a-4e01-b6fe-517434460b33)
