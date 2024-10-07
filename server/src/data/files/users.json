@@ -4,27 +4,31 @@
     "password": "3968sleRR",
     "role": 8,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "6861a2f581d6c55380a0bc2e"
+    "id": "6861a2f581d6c55380a0bc2e",
+    "isOnline": false
   },
   {
     "email": "Bauti_12@gmail.com",
     "password": "3968sleRRguvub",
     "role": 9,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "e021cc771f3e36e7ed291d8a"
+    "id": "e021cc771f3e36e7ed291d8a",
+    "isOnline": false
   },
   {
     "email": "laura34@gmail.com",
     "password": "3968sleRRguvub",
     "role": 3,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "908e2a50979a869ba5155746"
+    "id": "908e2a50979a869ba5155746",
+    "isOnline": false
   },
   {
-    "email": "Manuel453@gmail.com",
+    "email": "bauti@gmail.com",
     "password": "3968sleRRguvub",
     "role": 3,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "60b99fbe76194db5a4e0dc3c"
+    "id": "60b99fbe76194db5a4e0dc3c",
+    "isOnline": false
   }
 ]

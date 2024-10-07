@@ -32,7 +32,7 @@ async function create(req, res, next) {
     if (!category) {
       category = "the category was not assigned";
     }
-    
+
     const response = await productsManager.creatOneProduct({
       title,
       photo,
@@ -107,6 +107,47 @@ async function deletedProduct(req, res, next) {
   }
 }
 
+//controladores de vistas
+
+async function showProducts(req, res, next) {
+  try {
+    let { category } = req.query;
+    let all;
+
+    if (!category) {
+      all = await productsManager.readAllProducts();
+    } else {
+      all = await productsManager.readAllProducts(category);
+    }
+
+    if (all.length > 0) {
+      return res.render("products", { products: all });
+    } else {
+      const error = new Error("Not found category");
+      error.statuscode = 404;
+      throw error;
+    }
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function showProduct(req, res, next) {
+  try {
+    const { pid } = req.params;
+    const responseId = await productsManager.readOneProduct(pid);
+    if (responseId) {
+      return res.render("product", { product:  responseId});
+    } else {
+      const error = new Error("Not found product Id");
+      error.statuscode = 400;
+      throw error;
+    }
+  } catch (error) {
+    return next(error);
+  }
+}
+
 export {
   getAllProducts,
   deletedProduct,
@@ -114,4 +155,6 @@ export {
   createpost,
   getProduct,
   create,
+  showProducts,
+  showProduct,
 };

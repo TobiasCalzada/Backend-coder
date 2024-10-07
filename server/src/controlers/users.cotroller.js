@@ -4,11 +4,12 @@ async function getAllUsers(req, res, next) {
   try {
     let { role } = req.query;
     let responseOfUsers;
+    let  roleParse =  parseInt(role)
 
-    if (!role) {
+    if (!roleParse) {
       responseOfUsers = await usersManager.readAllUsers();
     } else {
-      responseOfUsers = await usersManager.readAllUsers(role);
+      responseOfUsers = await usersManager.readAllUsers(roleParse);
     }
     
 
@@ -28,13 +29,14 @@ async function getAllUsers(req, res, next) {
 
 async function create(req, res, next) {
   try {
-    let { photo, email, password, role } = req.params;
+    let { photo, email, password, role, isOnline } = req.params;
 
     const response = await usersManager.creatOneUser({
       photo,
       email,
       password,
       role,
+      isOnline
     });
     return res.status(201).json({ message: "User create", response });
   } catch (error) {
@@ -103,4 +105,23 @@ async function deletedUser(req, res, next) {
   }
 }
 
-export { getAllUsers, getUser, updateUser, createpost, deletedUser, create };
+async function registerView(req, res, next) {
+  try {
+    const users = await usersManager.readAllUsers()
+    return res.render("register", {users})
+  } catch (error) {
+    return next(error)
+  }
+}
+
+async function viewIdUser(req, res, next) {
+  try {
+    const {id} = req.query
+    const user = await usersManager.readOneUser(id)
+    return res.render("userId" , {user})
+  } catch (error) {
+    return next(error)
+  }
+}
+
+export { getAllUsers, getUser, updateUser, createpost, deletedUser, create, registerView,viewIdUser };
