@@ -1,0 +1,46 @@
+<h1 class="m-4">Admin options</h1>
+
+{{!create form}}
+<div class="contanierCreate">
+    <h3 class="ms-4 mt-5">form create product</h3>
+    <section class="containerFormCreate">
+        <form class="d-flex flex-column p-3 d-flex justify-content-center align-items-center">
+            <input  type="text" name="title" id="titleCreate" placeholder="title">
+            <input class="mt-2" type="text" name="category" id="categoryCreate" placeholder="category">
+            <input class="mt-2" type="text" name="photoP" id="photoCreate" placeholder="photo">
+            <input class="mt-2" type="number" name="price" id="priceCreate" placeholder="price">
+            <input class="mt-2" type="number" name="stock" id="stockCreate" placeholder="stock">
+            <button type="button" id="create" value="REGISTERP"  class="btn btn-warning  mt-2">Create</button>
+        </form>
+        <article>
+            <h3>Id product</h3>
+            <p id="idProduct">ID:</p>
+        </article>
+    </section>
+</div>
+
+{{!delet product}}
+<section class="contanerDeleted">
+    <h2>Deleted Product</h2>
+    <input  type="text" name="deleted" id="deletedProductInput" placeholder="Product ID to delete">
+    <button type="button" id="deletedProduct" value="DELETEDPRODUCT"  class="btn btn-warning  mt-2">Deleted</button>
+    <p id="productdeletedIdText">result:</p>
+</section>
+
+{{!update form}}
+<div class="containerUpdate">
+    <h3 class="ms-4 mt-5">form update product</h3>
+    <section class="containerFormUpdate">
+        <form class="d-flex flex-column p-3 d-flex justify-content-center align-items-center">
+            <input  type="text" name="update" id="updateProductInput" placeholder="Product ID to update">
+            <input  type="text" name="title" id="titleUpdate" placeholder="title">
+            <input class="mt-2" type="text" name="category" id="categoryUpdate" placeholder="category">
+            <input class="mt-2" type="text" name="photoP" id="photoUpdate" placeholder="photo">
+            <input class="mt-2" type="number" name="price" id="priceUpdate" placeholder="price">
+            <input class="mt-2" type="number" name="stock" id="stockUpdate" placeholder="stock">
+            <button type="button" id="updateForm" value="UPDATE"  class="btn btn-warning  mt-2">update</button>
+        </form>
+    </section>
+</div>
+
+

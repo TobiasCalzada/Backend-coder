@@ -1,4 +1,4 @@
-import productsManager from "../data/products.manager.js";
+import productsManager from "../data/Products.manager.js";
 
 async function getAllProducts(req, res, next) {
   try {
@@ -108,7 +108,6 @@ async function deletedProduct(req, res, next) {
 }
 
 //controladores de vistas
-
 async function showProducts(req, res, next) {
   try {
     let { category } = req.query;
@@ -148,6 +147,15 @@ async function showProduct(req, res, next) {
   }
 }
 
+async function adminPController(req, res, next) {
+  try {
+    const products = await productsManager.readAllProducts();
+    return res.render("admin", { products });
+  } catch (error) {
+    return next(error);
+  }
+}
+
 export {
   getAllProducts,
   deletedProduct,
@@ -157,4 +165,5 @@ export {
   create,
   showProducts,
   showProduct,
+  adminPController,
 };

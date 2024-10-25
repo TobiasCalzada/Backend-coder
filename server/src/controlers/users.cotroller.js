@@ -4,19 +4,16 @@ async function getAllUsers(req, res, next) {
   try {
     let { role } = req.query;
     let responseOfUsers;
-    let  roleParse =  parseInt(role)
+    let roleParse = parseInt(role);
 
     if (!roleParse) {
       responseOfUsers = await usersManager.readAllUsers();
     } else {
       responseOfUsers = await usersManager.readAllUsers(roleParse);
     }
-    
 
     if (responseOfUsers.length > 0) {
-      return res
-      .status(200)
-      .json({ message: "Users read", responseOfUsers });
+      return res.status(200).json({ message: "Users read", responseOfUsers });
     } else {
       const error = new Error("Not found role");
       error.statuscode = 404;
@@ -36,7 +33,7 @@ async function create(req, res, next) {
       email,
       password,
       role,
-      isOnline
+      isOnline,
     });
     return res.status(201).json({ message: "User create", response });
   } catch (error) {
@@ -107,21 +104,42 @@ async function deletedUser(req, res, next) {
 
 async function registerView(req, res, next) {
   try {
-    const users = await usersManager.readAllUsers()
-    return res.render("register", {users})
+    const users = await usersManager.readAllUsers();
+    return res.render("register", { users });
   } catch (error) {
-    return next(error)
+    return next(error);
   }
 }
 
 async function viewIdUser(req, res, next) {
   try {
-    const {id} = req.query
-    const user = await usersManager.readOneUser(id)
-    return res.render("userId" , {user})
+    const { id } = req.query;
+    const user = await usersManager.readOneUser(id);
+    if (!user) {
+        return res.render("userId", { error: "User not found" });
+    }
+    return res.render("userId", { user });
+} catch (error) {
+    return next(error);
+}}
+
+async function viewUsersLogin(req,res,next) {
+  try {
+    const users = await usersManager.readAllUsers();
+    return res.render("registerlogin", { users });
   } catch (error) {
-    return next(error)
+    return next(error);
   }
 }
 
-export { getAllUsers, getUser, updateUser, createpost, deletedUser, create, registerView,viewIdUser };
+export {
+  getAllUsers,
+  getUser,
+  updateUser,
+  createpost,
+  deletedUser,
+  create,
+  registerView,
+  viewIdUser,
+  viewUsersLogin,
+};

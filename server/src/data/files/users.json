@@ -1,34 +1,38 @@
 [
   {
-    "email": "tobias@gmail.com",
-    "password": "3968sleRR",
-    "role": 8,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "6861a2f581d6c55380a0bc2e",
-    "isOnline": false
+    "name": "pedro",
+    "email": "pepe_34@gmail.com",
+    "password": "3345l56ti",
+    "photo": "none",
+    "role": "3",
+    "isOnline": false,
+    "id": "c2c672aaee3603a103294a20"
   },
   {
-    "email": "Bauti_12@gmail.com",
-    "password": "3968sleRRguvub",
-    "role": 9,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "e021cc771f3e36e7ed291d8a",
-    "isOnline": false
+    "name": "Tobias calzada",
+    "email": "tobias_12@gmail.com",
+    "password": "3345l56ti",
+    "photo": "none",
+    "role": "1",
+    "isOnline": false,
+    "id": "791157544575e5403e5810f8"
   },
   {
-    "email": "laura34@gmail.com",
-    "password": "3968sleRRguvub",
-    "role": 3,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "908e2a50979a869ba5155746",
-    "isOnline": false
+    "name": "natalia",
+    "email": "natalia2@gmail.com",
+    "password": "9497593469",
+    "photo": "none",
+    "role": "6",
+    "isOnline": false,
+    "id": "1deccd599a9b016463c5d439"
   },
   {
-    "email": "bauti@gmail.com",
-    "password": "3968sleRRguvub",
-    "role": 3,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pF8GnmChSFfzXblcYqo8-rCIiaZ21m7BUg&s",
-    "id": "60b99fbe76194db5a4e0dc3c",
-    "isOnline": false
+    "name": "martin perez",
+    "email": "martup_2@gmail.com",
+    "password": "219838784734326",
+    "photo": "none",
+    "role": "88",
+    "isOnline": false,
+    "id": "57ab7f01bf37a3ebc5fac125"
   }
 ]

@@ -6,7 +6,7 @@ function priceStockP(req, res, next) {
   }
 
   if (!category) {
-    category = "the category was not defined";
+    category = "the category is not defined";
   }
 
   if (!stock) {
