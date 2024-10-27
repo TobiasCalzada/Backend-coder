@@ -1,3 +1,4 @@
+import productsMongoManager from "../data/mongo/managers/product.mongo.js";
 import productsManager from "../data/Products.manager.js";
 
 async function getAllProducts(req, res, next) {
@@ -156,6 +157,59 @@ async function adminPController(req, res, next) {
   }
 }
 
+//mongo
+async function createProductMongo(req, res, next) {
+  try {
+    const data = req.body
+    const response = await productsMongoManager.create(data)
+    return res.status(201).json({ message: "Product create", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function readAllProductMongo(req, res, next) {
+  try {
+    const response = await productsMongoManager.readAll()
+    return res.status(200).json({ message: "Products Read", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function readProductMongo(req, res, next) {
+  try {
+    const {pid} = req.params
+    const response = await productsMongoManager.read(pid)
+    return res.status(200).json({ message: "Product Read", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function updateProductMongo(req, res, next) {
+  try {
+    const {pid} = req.params 
+    const data = req.body
+    const response = await productsMongoManager.update(pid,data)
+    return res.status(200).json({ message: "Product update", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function destroyProductMongo(req, res, next) {
+  try {
+    const {pid} = req.params
+    const response = await productsMongoManager.destroy(pid)
+    return res.status(200).json({ message: "Product deleted", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+
+
 export {
   getAllProducts,
   deletedProduct,
@@ -166,4 +220,9 @@ export {
   showProducts,
   showProduct,
   adminPController,
+  createProductMongo,
+  readAllProductMongo,
+  readProductMongo,
+  updateProductMongo,
+  destroyProductMongo
 };

@@ -1,3 +1,4 @@
+import usersMongoManager from "../data/mongo/managers/user.mongo.js";
 import usersManager from "../data/Users.manager.js";
 
 async function getAllUsers(req, res, next) {
@@ -132,6 +133,57 @@ async function viewUsersLogin(req,res,next) {
   }
 }
 
+//mongo
+async function createUserMongo(req, res, next) {
+  try {
+    const data = req.body
+    const response = await usersMongoManager.create(data)
+    return res.status(201).json({ message: "User create", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function readAllUserMongo(req, res, next) {
+  try {
+    const response = await usersMongoManager.readAll()
+    return res.status(200).json({ message: "Users Read", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function readUserMongo(req, res, next) {
+  try {
+    const {uid} = req.params
+    const response = await usersMongoManager.read(uid)
+    return res.status(200).json({ message: "User Read", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function updateUserMongo(req, res, next) {
+  try {
+    const {uid} = req.params 
+    const data = req.body
+    const response = await usersMongoManager.update(uid,data)
+    return res.status(200).json({ message: "User update", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function destroyUserMongo(req, res, next) {
+  try {
+    const {uid} = req.params
+    const response = await usersMongoManager.destroy(uid)
+    return res.status(200).json({ message: "User deleted", response });
+  } catch (error) {
+    return next(error);
+  }
+}
+
 export {
   getAllUsers,
   getUser,
@@ -142,4 +194,9 @@ export {
   registerView,
   viewIdUser,
   viewUsersLogin,
+  createUserMongo,
+  readAllUserMongo,
+  readUserMongo,
+  updateUserMongo,
+  destroyUserMongo
 };
