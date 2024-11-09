@@ -302,21 +302,5 @@
     "price": 90,
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
     "id": "e5d0ca6a50ee778446124d82"
-  },
-  {
-    "title": "product 39",
-    "category": "cemento",
-    "stock": 230,
-    "price": 90,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
-    "id": "8a9df5e0f7edfe3a92fd96d9"
-  },
-  {
-    "title": "product 40",
-    "category": "cemento",
-    "stock": 200,
-    "price": 90,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbiifpjqr9_wFVcfaf6oR4WJYMOLzB__zEQ&s",
-    "id": "8a6593952c9e71b885328262"
   }
 ]

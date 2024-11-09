@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Solo incluimos en los datos aquellos campos que no están vacíos o nulos
       const productsDataUpdate = { id: idUpdateInput };
       if (title) productsDataUpdate.title = title;
       if (category) productsDataUpdate.category = category;

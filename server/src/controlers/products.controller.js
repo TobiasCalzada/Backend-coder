@@ -1,5 +1,6 @@
 import productsMongoManager from "../data/mongo/managers/product.mongo.js";
 import productsManager from "../data/Products.manager.js";
+import mongoose from "mongoose";
 
 async function getAllProducts(req, res, next) {
   try {
@@ -115,9 +116,9 @@ async function showProducts(req, res, next) {
     let all;
 
     if (!category) {
-      all = await productsManager.readAllProducts();
+      all = await productsMongoManager.readAll();
     } else {
-      all = await productsManager.readAllProducts(category);
+      all = await productsMongoManager.readAll(category)
     }
 
     if (all.length > 0) {
@@ -135,7 +136,7 @@ async function showProducts(req, res, next) {
 async function showProduct(req, res, next) {
   try {
     const { pid } = req.params;
-    const responseId = await productsManager.readOneProduct(pid);
+    const responseId = await productsMongoManager.read(pid);
     if (responseId) {
       return res.render("product", { product:  responseId});
     } else {
@@ -170,7 +171,8 @@ async function createProductMongo(req, res, next) {
 
 async function readAllProductMongo(req, res, next) {
   try {
-    const response = await productsMongoManager.readAll()
+    const category = req.query
+    const response = await productsMongoManager.readAll(category)
     return res.status(200).json({ message: "Products Read", response });
   } catch (error) {
     return next(error);

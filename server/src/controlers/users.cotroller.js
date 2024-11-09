@@ -146,7 +146,8 @@ async function createUserMongo(req, res, next) {
 
 async function readAllUserMongo(req, res, next) {
   try {
-    const response = await usersMongoManager.readAll()
+    const email = req.query
+    const response = await usersMongoManager.readAll(email)
     return res.status(200).json({ message: "Users Read", response });
   } catch (error) {
     return next(error);

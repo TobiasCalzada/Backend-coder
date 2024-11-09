@@ -3,9 +3,9 @@ import { Schema, model } from "mongoose";
 const collection = "users";
 const schema = new Schema({
   name: { type: String, require: true },
-  email: { type: String, require: true},
+  email: { type: String, require: true, index: true },
   password: { type: String, require: true},
-  role: { type: Number, require: true},
+  role: { type: Number, require: true, index: true },
   isOnline:{ type: String, default: false},
   photo: {
     type: String,

@@ -2,8 +2,8 @@ import { Schema, model } from "mongoose";
 
 const collection = "products";
 const schema = new Schema({
-  title: { type: String, require: true },
-  category: { type: String, default: "mate" },
+  title: { type: String, require: true, index: true },
+  category: { type: String, default: "mate", index: true },
   stock: { type: Number, default: 1 },
   price: { type: Number, default: 1 },
   photo: {
