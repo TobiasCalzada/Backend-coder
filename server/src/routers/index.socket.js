@@ -1,31 +1,37 @@
 import usersManager from "../data/Users.manager.js";
 import productsManager from "../data/Products.manager.js";
+import usersMongoManager from "../data/mongo/managers/user.mongo.js";
+import productsMongoManager from "../data/mongo/managers/product.mongo.js";
+import cartsMongoManager from "../data/mongo/managers/cart.mongo.js";
+import MongoManager from "../data/mongo/managers/mongo.manager.js";
 
 const socketCb = async (socket) => {
   console.log(`socket connected id:` + socket.id);
 
   //creacion de usuario
   socket.on("new user", async (data) => {
-    const id = await usersManager.creatOneUser(data);
-    const allUser = await usersManager.readAllUsers();
+    const id = await usersMongoManager.create(data);
+    const allUser = await usersMongoManager.readAll();
     socket.emit("update users", allUser);
   });
-  const allUser = await usersManager.readAllUsers();
+  const allUser = await usersMongoManager.readAll();
   socket.emit("update users", allUser);
+
 
   //creacion de productos
   socket.on("product nuevo", async (data) => {
-    const id = await productsManager.creatOneProduct(data);
-    const allProducts = await productsManager.readAllProducts();
+    const id = await productsMongoManager.create(data);
+    const allProducts = await productsMongoManager.readAll();
     socket.emit("actualizacion product", allProducts);
   });
-  const allProducts = await productsManager.readAllProducts();
+  const allProducts = await productsMongoManager.readAll();
   socket.emit("actualizacion product", allProducts);
+
 
   //borrado de producto
   socket.on("delete product", async (productId) => {
     try {
-      const productExists = await productsManager.readOneProduct(productId);
+      const productExists = await productsMongoManager.read(productId);
       if (!productExists) {
         socket.emit(
           "product delete error",
@@ -33,7 +39,7 @@ const socketCb = async (socket) => {
         );
         return;
       }
-      const productDeleted = await productsManager.delete(productId);
+      const productDeleted = await productsMongoManager.destroy(productId);
       socket.emit(
         "product deleted",
         `Producto con ID ${productId} ha sido eliminado.`
@@ -46,15 +52,16 @@ const socketCb = async (socket) => {
     }
   });
 
+  //actualizacion de producto
   socket.on("product update", async (data) => {
-    const product = await productsManager.readOneProduct(data.id);
+    const product = await productsMongoManager.read(data.id);
     if (!product) {
       socket.emit("product not found", { id: data.id });
       return;
     }
   
     const updatedProduct = { ...product, ...data };
-    const productUpdate = await productsManager.update(data.id, updatedProduct);
+    const productUpdate = await productsMongoManager.update(data.id, updatedProduct);
     socket.emit("actualizacion product", productUpdate);
   });
 };

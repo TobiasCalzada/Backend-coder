@@ -1,12 +1,12 @@
 [
-  {
-    "title": "prod",
-    "price": "1000",
-    "id": "780545a2a8bb4712509e6985"
-  },
-  {
-    "title": "prod",
-    "price": "1000",
-    "id": "3aa9ac367d8e3e3fc72bf1f2"
-  }
-]
+    {
+      "title": "prod",
+      "price": "1000",
+      "id": "780545a2a8bb4712509e6985"
+    },
+    {
+      "title": "prod",
+      "price": "1000",
+      "id": "3aa9ac367d8e3e3fc72bf1f2"
+    }
+  ]
